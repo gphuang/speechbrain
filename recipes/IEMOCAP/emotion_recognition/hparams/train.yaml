@@ -12,7 +12,7 @@ seed: 1968
 __set_seed: !apply:torch.manual_seed [!ref <seed>]
 
 # Dataset will be downloaded to the `data_original`
-data_folder: !PLACEHOLDER  # e.g., /path/to/IEMOCAP_full_release
+data_folder: /scratch/elec/puhe/c/IEMOCAP_full_release # !PLACEHOLDER  # e.g., /path/to/IEMOCAP_full_release
 output_folder: !ref results/ECAPA-TDNN/<seed>
 save_folder: !ref <output_folder>/save
 train_log: !ref <output_folder>/train_log.txt
